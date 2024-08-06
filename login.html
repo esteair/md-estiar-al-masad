@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+    <title> my project</title>
+</head>
+   <style>
+    #grad1 {
+        height:120px;
+        background-image: linear-gradient(rgb(75, 0, 155),rgb(169, 27, 25));
+    }
+   </style>
+<body>
+    <header id="grad1"><br>
+        <h2 class="logo">CREATED BY MD ESTIAR AL-MASAD.</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="login">Login</button>
+        </nav>
+    </header>
+</body>
+    <fieldset>
+    <legend class="coc" >fillup your correct information below</legend>
+    <label>First name:<input name:firstname></label><br><br>
+    <label>Last name:<input name:last name></label><br> <br>
+    Gender:
+    <label> <input type="radio" name="gender" value="male">Male</label>
+    <label> <input type="radio" name="gender" value="female">Female</label>
+    <label> <input type="radio" name="gender" value="Custom">Custom</label>
+    <br> <br>
+    <label>Date of birth:<input type="date"></label><br><br>
+    <u><b>Educational qualifications:</b></u><br>
+    <div class="div-ssc">
+        <fieldset>
+            <legend class="ssc-legend">SSC</legend>
+        Board:
+       <select name="Board:">
+        <option>--Select--</option>
+        <option>Rajshahi</option>
+        <option>Dhaka</option>
+        <option>Cumilla</option>
+        <option>Rangpur</option>
+        <option>Chattogram</option>
+        <option>Khulna</option>
+        <option>Borishal</option>
+        <option>Slyhet</option>
+       </select>
+       <p><label>Passing institution:<input name:name></label></p>
+       <p><label>Result:<input type="number"></label></p>
+       <p>
+       Group:
+        <select name="Group:">
+            <option>--Select--</option>
+            <option>Science</option>
+            <option>Arts</option>
+            <option>Commerce</option>
+            <option>Economics</option>
+        </select>
+       </p>
+        </fieldset><br>
+       </div>
+       <div class="div-hsc">
+       <fieldset class="hsc">
+        <legend class="legend-hsc">HSC</legend>
+        Board:
+        <select name="Board:">
+         <option>--Select--</option>
+         <option>Rajshahi</option>
+         <option>Dhaka</option>
+         <option>Cumilla</option>
+         <option>Rangpur</option>
+         <option>Chattogram</option>
+         <option>Khulna</option>
+         <option>Borishal</option>
+         <option>Slyhet</option>
+        </select>
+        <p><label>Passing institution:<input name:name></label></p>
+        <p><label>Result:<input type="number"></label></p>
+        <p>
+        Group:
+         <select name="Group:">
+             <option>--Select--</option>
+             <option>Science</option>
+             <option>Arts</option>
+             <option>Commerce</option>
+             <option>Economics</option>
+         </select>
+        </p>
+    </div>
+   <fieldset class="arian">
+    <legend class="legend-ba">B.Sc</legend>
+
+<label>University:<input name:name></label>
+<p>
+Subject:
+    <select name="Subject:">
+        <option>--Select--</option>
+        <option>Zoology</option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+    </select>
+    <P>
+    <label>Result:<input type="number"></label>
+    </p>
+</p>
+   
+ 
+   </fieldset><br><br>
+   <label>E-mail:<input type="email" name="email"></label>
+   <p>
+    <label>Phone number:<input type="tel" id="coc" required pattern="[0-9]{11}" placeholder="01XXXXXXXXX"></label>
+    <style>
+        #coc {
+            outline: 0;
+            cursor: pointer;
+        }
+        #coc:valid {
+            border-color:green;
+        }
+        #coc:invalid {
+            border-color:red;
+        }
+    </style>
+   </p>
+   <p>
+    Religion:
+    
+    <select name="Religion:">
+        <option>--Select--</option>
+        <option>Islam</option>
+        <option>Hinduism</option>
+        <option>Buddhism</option>
+        <option>Christian</option>
+    </select>
+    </p>
+    <p>
+        Do you have any physical or mental abnormalily:
+        <label><input type="radio" name=" Do you have any physical or mental abnormalily:" value="Yes">Yes</label>
+        <label><input type="radio" name=" Do you have any physical or mental abnormalily:" value="No">No</label>
+    </p>
+    <p>
+        Blood group:
+        <select name:Blood group:>
+            <option>--Select--</option>
+            <option>A+(Positive)</option>
+            <option>A-(Negative)</option>
+            <option>B+(Positive)</option>
+            <option>B-(Negative)</option>
+            <option>AB+(Positive)</option>
+            <option>AB-(Negative)</option>
+            <option>O+(Positive)</option>
+            <option>O-(Negative)</option>
+        </select>
+    </p>
+    <div>
+<button type="submit" class="submit" onclick="submit.showModal()">Submit</button>
+<dialog id="submit">
+    <p>Your information is successfully submitted.</p>
+    <button class="submit-close" onclick="submit.close()">OK</button>
+    <div>
+        <a href="youtube.html">
+        <button style="margin-left:20px;
+        background-color:rgb(118, 90, 160);">Click here to see my youtube website</button>
+    </a>
+    </div>
+</dialog>
+</div>
+</fieldset>
+    <style>
+.legend-ba {
+    text-align: center;
+    background-color: rgb(0, 200, 255);
+    border-radius: 5px;
+}
+.arian {
+    width:45%;
+}
+.div-ssc {
+    display:inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+.div-hsc {
+    display:inline-block;
+    width:45%;
+    vertical-align: top;
+}
+.ssc-legend {
+  text-align: center;
+  background-color: rgb(226, 43, 43);
+  border-radius: 5px;
+}
+.legend-hsc {
+    text-align: center;
+    background-color: rgb(200, 0, 255);
+    border-radius: 5px;
+}
+.submit {
+    background-color:rgba(180, 178, 178, 0.929);
+    color:rgb(0, 0, 0);
+    width: 150px;
+    height: 50px;
+    font-size:25px;
+    box-shadow: 5px 5px 5px;
+   margin-left: 50%;
+}
+.submit:hover {
+    cursor:pointer;
+    background-color: rgb(193, 173, 22);
+    transition: 1s;
+    border-radius: 25px;
+}
+.sumbit:active {
+    background-color: green;
+}
+.submit-close {
+    background-color: rgb(92, 167, 92);
+    cursor:pointer;
+    border-radius: 15px;
+   margin-left: 125px;
+   width:40px;
+margin-bottom:20px;
+}
+
+</style>
+</body>
+    </html>
+
+    </style>
+</body>
